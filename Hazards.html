@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Electrical Hazards - SafeSpark</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-700 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/index.html" class="flex items-center gap-2 text-2xl font-bold text-white">
+        Safe <span class="text-black">Spark</span>
+        <img src="/images/008.png" alt="Logo" class="w-8 h-8 object-contain"/>
+      </a>
+      <a href="/courses.html" class="text-white hover:underline">Back to Home</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-blue-100 py-12 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">🏠 Home Electrical Hazards</h2>
+      <p class="text-gray-700 text-lg">
+        Learn about the common electrical dangers in homes and how to prevent them safely.
+      </p>
+    </div>
+  </header>
+
+  <!-- Course Content -->
+  <main class="max-w-4xl mx-auto px-4 py-10">
+
+  
+    <!-- Topics -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold text-yellow-800 mb-4">📘 What You'll Learn</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Types of electrical hazards found at home</li>
+        <li>What causes short circuits and sparks</li>
+        <li>Examples of poor electrical setups</li>
+        <li>Safe practices: unplugging, avoiding overloads</li>
+        <li>Using fuses and circuit breakers correctly</li>
+      </ul>
+    </section>
+
+    <!-- Show Quiz Button -->
+    <div class="text-center mb-10">
+      <button onclick="document.getElementById('quizSection').classList.remove('hidden')"
+              class="bg-blue-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-lg font-medium transition">
+        🧪 Take Quiz
+      </button>
+    </div>
+
+    <!-- Quiz Section -->
+    <section id="quizSection" class="hidden border-t pt-10">
+      <h3 class="text-2xl font-bold text-yellow-800 text-center mb-6">Home Hazards Quiz</h3>
+      
+      <form id="quizForm" class="space-y-8">
+
+        <!-- Q1 -->
+        <div>
+          <h4 class="font-semibold text-lg mb-2">1. Which of the following is a home electrical hazard?</h4>
+          <label class="block"><input type="radio" name="q1" value="a" class="mr-2">Broken window</label>
+          <label class="block"><input type="radio" name="q1" value="b" class="mr-2">Kitchen plate</label>
+          <label class="block"><input type="radio" name="q1" value="c" class="mr-2">🧨 Burned wire</label>
+          <label class="block"><input type="radio" name="q1" value="d" class="mr-2">Hard mattress</label>
+        </div>
+
+        <!-- Q2 -->
+        <div>
+          <h4 class="font-semibold text-lg mb-2">2. What can cause a circuit overload?</h4>
+          <label class="block"><input type="radio" name="q2" value="a" class="mr-2">Using many plugs in one outlet</label>
+          <label class="block"><input type="radio" name="q2" value="b" class="mr-2">Using switches</label>
+          <label class="block"><input type="radio" name="q2" value="c" class="mr-2">Turning off lights</label>
+          <label class="block"><input type="radio" name="q2" value="d" class="mr-2">Using too much water</label>
+        </div>
+
+        <!-- Q3 -->
+        <div>
+          <h4 class="font-semibold text-lg mb-2">3. How can we reduce electrical risks at home?</h4>
+          <label class="block"><input type="radio" name="q3" value="a" class="mr-2">Play with wires</label>
+          <label class="block"><input type="radio" name="q3" value="b" class="mr-2">Put water near plugs</label>
+          <label class="block"><input type="radio" name="q3" value="c" class="mr-2">Not using fuses</label>
+          <label class="block"><input type="radio" name="q3" value="d" class="mr-2">✅ Unplug devices when not used</label>
+        </div>
+
+        <!-- Q4 -->
+        <div>
+          <h4 class="font-semibold text-lg mb-2">4. What is a short circuit?</h4>
+          <label class="block"><input type="radio" name="q4" value="a" class="mr-2">Light goes off</label>
+          <label class="block"><input type="radio" name="q4" value="b" class="mr-2">Battery drains</label>
+          <label class="block"><input type="radio" name="q4" value="c" class="mr-2">Wire bends</label>
+          <label class="block"><input type="radio" name="q4" value="d" class="mr-2">⚡ Two wires connect directly</label>
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center">
+          <button type="submit" class="bg-blue-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition">
+            Submit Quiz
+          </button>
+        </div>
+      </form>
+
+      <!-- Result Box -->
+      <div id="result" class="mt-8 text-center text-xl font-semibold text-green-600 hidden"></div>
+    </section>
+
+  </main>
+  <section class="max-w-4xl mx-auto my-16 px-4">
+    <h2 class="text-2xl font-bold mb-4 text-center text-blue-700">🎥 Professional Video Training</h2>
+    <div class="relative w-full overflow-hidden pb-[56.25%] h-0">
+      <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+        src="https://www.youtube.com/embed/d3zTfXvYZ9s" 
+        title="Electrical Safety Training" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <!-- Quiz Logic -->
+  <script>
+    const quizForm = document.getElementById('quizForm');
+    const resultBox = document.getElementById('result');
+
+    quizForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const correctAnswers = {
+        q1: "c",
+        q2: "a",
+        q3: "d",
+        q4: "d"
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let q in correctAnswers) {
+        const selected = quizForm[q].value;
+        if (selected === correctAnswers[q]) score++;
+      }
+
+      resultBox.textContent = `✅ You scored ${score} out of ${total}!`;
+      resultBox.classList.remove('hidden');
+    });
+  </script>
+
+</body>
+</html>

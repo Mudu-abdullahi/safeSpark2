@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basic Electricity - SafeSpark</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+   <!-- Navbar -->
+  <nav class="bg-blue-700 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/index.html" class="flex items-center gap-2 text-2xl font-bold text-white">
+        Safe <span class="text-black">Spark</span>
+        <img src="/images/008.png" alt="Logo" class="w-8 h-8 object-contain"/>
+      </a>
+      <a href="/courses.html" class="text-white hover:underline">Back to Home</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-blue-100 py-12 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">🔌 Basic Electricity</h2>
+      <p class="text-gray-700 text-lg">
+        Understand the core concepts of electricity: voltage, current, resistance, and simple circuits.
+      </p>
+    </div>
+  </header>
+
+  <!-- Course Content -->
+  <main class="max-w-4xl mx-auto px-4 py-10">
+
+    <!-- Image -->
+    <img src="/images/005.png" alt="Basic Electricity"
+         class="w-36 sm:w-44 mx-auto mb-8 rounded-lg shadow border border-gray-300 bg-white p-2" />
+
+    <!-- Topics -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold text-blue-700 mb-4">📘 What You'll Learn</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>What is electricity?</li>
+        <li>Understanding voltage and current</li>
+        <li>Introduction to circuits</li>
+        <li>Safe usage of electrical devices</li>
+        <li>Simple troubleshooting tips</li>
+      </ul>
+    </section>
+
+    <!-- Show Quiz Button -->
+    <div class="text-center mb-10">
+      <button onclick="document.getElementById('quizSection').classList.remove('hidden')"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">
+        🧪 Take Quiz
+      </button>
+    </div>
+
+    <!-- Quiz Section -->
+    <section id="quizSection" class="hidden border-t pt-10">
+      <h3 class="text-2xl font-bold text-blue-700 text-center mb-6">Basic Electricity Quiz</h3>
+      
+      <form id="quizForm" class="space-y-8">
+
+        <!-- Question 1 -->
+        <div>
+          <h4 class="font-semibold text-lg mb-2">1. What is the unit of electrical current?</h4>
+          <label class="block"><input type="radio" name="q1" value="a" class="mr-2">Watt</label>
+          <label class="block"><input type="radio" name="q1" value="b" class="mr-2">Volt</label>
+          <label class="block"><input type="radio" name="q1" value="c" class="mr-2">Ampere</label>
+          <label class="block"><input type="radio" name="q1" value="d" class="mr-2">Ohm</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div>
+          <h4 class="font-semibold text-lg mb-2">2. Which material is a good conductor of electricity?</h4>
+          <label class="block"><input type="radio" name="q2" value="a" class="mr-2">Plastic</label>
+          <label class="block"><input type="radio" name="q2" value="b" class="mr-2">Glass</label>
+          <label class="block"><input type="radio" name="q2" value="c" class="mr-2">Copper</label>
+          <label class="block"><input type="radio" name="q2" value="d" class="mr-2">Wood</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div>
+          <h4 class="font-semibold text-lg mb-2">3. What does a circuit need to be complete?</h4>
+          <label class="block"><input type="radio" name="q3" value="a" class="mr-2">Switch only</label>
+          <label class="block"><input type="radio" name="q3" value="b" class="mr-2">A power source, conductor, and load</label>
+          <label class="block"><input type="radio" name="q3" value="c" class="mr-2">Just a wire</label>
+          <label class="block"><input type="radio" name="q3" value="d" class="mr-2">Bulb only</label>
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center">
+          <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition">
+            Submit Quiz
+          </button>
+        </div>
+      </form>
+
+      <!-- Result Box -->
+      <div id="result" class="mt-8 text-center text-xl font-semibold text-green-600 hidden"></div>
+    </section>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script>
+    const quizForm = document.getElementById('quizForm');
+    const resultBox = document.getElementById('result');
+
+    quizForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const correctAnswers = {
+        q1: "c",
+        q2: "c",
+        q3: "b"
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let q in correctAnswers) {
+        const selected = quizForm[q].value;
+        if (selected === correctAnswers[q]) score++;
+      }
+
+      resultBox.textContent = `✅ You scored ${score} out of ${total}!`;
+      resultBox.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

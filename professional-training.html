@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Training - SafeSpark</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body class=" text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-700 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/index.html" class="flex items-center gap-2 text-2xl font-bold text-white">
+        Safe <span class="text-black">Spark</span>
+        <img src="/images/008.png" alt="Logo" class="w-8 h-8 object-contain"/>
+      </a>
+      <a href="/courses.html" class="text-white hover:underline">Back to Home</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-64 flex items-center justify-center text-center text-black bg-blue-200">
+    <div class="relative z-10">
+      <h1 class="text-4xl font-bold">Professional Electrical Training</h1>
+      <p class="mt-2 text-lg">Stay safe by learning proper procedures and gear for electrical work.</p>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="max-w-3xl mx-auto my-10 px-4">
+    <p class="text-lg">
+      Professionals in electrical fields must be properly trained to avoid injury or death. This includes using certified tools,
+      understanding wiring diagrams, shutting down power before working, and always wearing full safety gear such as helmets,
+      gloves, and insulated boots. Mistakes in the field can be fatal training and precaution are non-negotiable.
+    </p>
+  </section>
+
+  <!-- Quiz Section -->
+  <section class="max-w-4xl mx-auto my-10 px-4">
+    <form id="quizForm" class="space-y-10">
+
+      <!-- Question 1 -->
+      <div>
+        <h2 class="text-xl font-bold mb-2">1. What should you do before starting electrical work?</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-4xl">
+          <label><input type="radio" name="q1" value="a" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-bolt"></i><p class="text-base mt-2">Start Immediately</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q1" value="b" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-power-off"></i><p class="text-base mt-2">Turn Off Power</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q1" value="c" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-phone"></i><p class="text-base mt-2">Call Friend</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q1" value="d" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-broom"></i><p class="text-base mt-2">Clean the Floor</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div>
+        <h2 class="text-xl font-bold mb-2">2. What gear is essential for professionals?</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-4xl">
+          <label><input type="radio" name="q2" value="a" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-helmet-safety"></i><p class="text-base mt-2">Helmet</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q2" value="b" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-vest"></i><p class="text-base mt-2">Safety Vest</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q2" value="c" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-shoe-prints"></i><p class="text-base mt-2">Insulated Boots</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q2" value="d" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-tshirt"></i><p class="text-base mt-2">Casual Shirt</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Submit</button>
+      </div>
+    </form>
+
+    <!-- Result -->
+    <div id="result" class="mt-6 text-2xl font-bold text-green-600 hidden text-center"></div>
+  </section>
+
+  <!-- Video Training -->
+  <section class="max-w-4xl mx-auto my-16 px-4">
+    <h2 class="text-2xl font-bold mb-4 text-center text-blue-700">🎥 Professional Video Training</h2>
+    <div class="relative w-full overflow-hidden pb-[56.25%] h-0">
+      <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+        src="https://www.youtube.com/embed/d3zTfXvYZ9s" 
+        title="Electrical Safety Training" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Quiz Logic Script -->
+  <script>
+    const quizForm = document.getElementById('quizForm');
+    const resultBox = document.getElementById('result');
+
+    quizForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const correctAnswers = {
+        q1: "b",  // Turn Off Power
+        q2: "a"   // Helmet
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let q in correctAnswers) {
+        const selected = quizForm[q]?.value;
+        if (selected === correctAnswers[q]) score++;
+      }
+
+      resultBox.textContent = `✅ You scored ${score} out of ${total}!`;
+      resultBox.classList.remove('hidden');
+    });
+  </script>
+
+</body>
+</html>

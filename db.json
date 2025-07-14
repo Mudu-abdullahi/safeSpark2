@@ -1,0 +1,50 @@
+{
+  "blogs": [
+    {
+      "title": "⚡ 5 Common Electrical Mistakes at Home",
+      "image": "https://plus.unsplash.com/premium_photo-1683865776032-07bf70b0add1?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "content": "Learn what steps to take immediately if someone experiences an electric shock.",
+      "link": "\"/electricity.html\"",
+      "id": "192a"
+    },
+    {
+      "id": "03f8",
+      "title": "🚑 What To Do If Someone Gets an Electric Shock?",
+      "image": "https://media.istockphoto.com/id/1472464806/photo/decorative-antique-edison-style-filament-light-bulbs-hanging-an-electrician-is-installing.jpg?s=1024x1024&w=is&k=20&c=rvn-N0gtYKlzSAd_21YzdXHgeapz_6R6jtcVonYdSEI=",
+      "content": "Learn how to safely plug and unplug devices, avoid loose sockets, and reduce fire risks.",
+      "link": "\"/electricity.html\""
+    },
+    {
+      "id": "1ebc",
+      "title": "Professional Training in electrical sefty",
+      "image": "https://media.istockphoto.com/id/1367493005/photo/electrician-installing-solar-panel-system-wiring-inverter-and-electric-box.jpg?s=1024x1024&w=is&k=20&c=cUTJ_oYrk9cYzD53gHYyq-8IqieeWO-HSsUOE5WFMsk=",
+      "content": "Man electrician installing solar panel system. Technician in helmet and gloves making electrical wiring inverter and electric box. Concept of alternative and renewable energy.",
+      "link": "\"/electricity.html\""
+    }
+  ],
+  "contact": [],
+  "kidsVideos": [
+    {
+      "id": "vid-lwf6zgxrx",
+      "title": "What Is Electricity",
+      "link": "https://www.youtube.com/embed/olUIAQu0iFg",
+      "description": "This video explains the basic concept of electricity using fun visuals for kids."
+    },
+    {
+      "title": "Play Safe with Electricity",
+      "link": "https://www.youtube.com/embed/olUIAQu0iFg",
+      "description": "Learn how to recognize danger zones and play smartly around electrical appliances.",
+      "id": "vid-w6wl8698v"
+    }
+  ],
+  "courseSignups": [],
+  "courses": [
+    {
+      "id": "8c59",
+      "title": "What Is Electricity",
+      "description": "its my course",
+      "image": "/images/003.png",
+      "link": "https://www.youtube.com/embed/olUIAQu0iFg"
+    }
+  ]
+}

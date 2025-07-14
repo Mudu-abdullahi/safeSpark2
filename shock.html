@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shock Prevention - SafeSpark</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body class=" bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-700 shadow-md">
+    <div class="max-w-7xl mx-auto px-9 py-4 flex justify-between items-center">
+      <a href="/index.html" class="flex items-center gap-2 text-2xl font-bold text-white">
+        Safe <span class="text-black">Spark</span>
+        <img src="/images/008.png" alt="Logo" class="w-8 h-8 object-contain"/>
+      </a>
+      <a href="/courses.html" class="text-white hover:underline">Back to Home</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section with YOUR Background Image -->
+  <section class="relative h-64 md:h-96 flex items-center justify-center text-center text-white">
+    <div class="absolute inset-0 bg-[url('https://i.pinimg.com/736x/9c/b0/d2/9cb0d220d32eb03039863dc1613fdbdb.jpg')] bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10">
+      <h1 class="text-4xl md:text-5xl font-bold">Shock Prevention</h1>
+      <p class="mt-2 text-lg">Learn how to protect yourself from electrical shock risks.</p>
+    </div>
+  </section>
+
+  <!-- Learning Section -->
+  <section class="max-w-3xl mx-auto my-10 px-4">
+    <p class="text-lg">
+      Electric shock can cause injury or death. To prevent it, always unplug devices properly, wear protective gear,
+      avoid using electronics near water, and know how to respond if someone is shocked.
+    </p>
+  </section>
+
+  <!-- Quiz Section -->
+  <section class="max-w-4xl mx-auto my-10 px-4 ">
+    <form id="quizForm" class="space-y-10">
+
+      <!-- Question 1 -->
+      <div>
+        <h2 class="text-xl font-semibold mb-2">1. Which icon shows a safe way to unplug a device?</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-4xl">
+          <label><input type="radio" name="q1" value="a" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-plug-circle-exclamation"></i>
+              <p class="text-base mt-2">Yank Cable</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q1" value="b" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-plug-circle-check"></i>
+              <p class="text-base mt-2">Pull Plug</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q1" value="c" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-hands-bubbles"></i>
+              <p class="text-base mt-2">Wet Hands</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q1" value="d" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-plug"></i>
+              <p class="text-base mt-2">Pull by Cord</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div>
+        <h2 class="text-xl font-semibold mb-2">2. Which icon shows correct protective equipment?</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-4xl">
+          <label><input type="radio" name="q2" value="a" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-hands"></i>
+              <p class="text-base mt-2">Rubber Gloves</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q2" value="b" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-hand"></i>
+              <p class="text-base mt-2">Bare Hand</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q2" value="c" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-socks"></i>
+              <p class="text-base mt-2">Barefoot</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q2" value="d" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-hand-holding-droplet"></i>
+              <p class="text-base mt-2">Wet Gloves</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div>
+        <h2 class="text-xl font-semibold mb-2">3. Which icon shows a dangerous place to use devices?</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-4xl">
+          <label><input type="radio" name="q3" value="a" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-house"></i>
+              <p class="text-base mt-2">Dry Room</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q3" value="b" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-sink"></i>
+              <p class="text-base mt-2">Kitchen Sink</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q3" value="c" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-tree"></i>
+              <p class="text-base mt-2">Dry Outside</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q3" value="d" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-bath"></i>
+              <p class="text-base mt-2">Bathroom</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div>
+        <h2 class="text-xl font-semibold mb-2">4. What should you do if someone is shocked?</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-4xl">
+          <label><input type="radio" name="q4" value="a" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-hand-fist"></i>
+              <p class="text-base mt-2">Grab Them</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q4" value="b" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-water"></i>
+              <p class="text-base mt-2">Pour Water</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q4" value="c" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-person-circle-exclamation"></i>
+              <p class="text-base mt-2">Yell Only</p>
+            </div>
+          </label>
+          <label><input type="radio" name="q4" value="d" class="hidden peer">
+            <div class="peer-checked:ring-4 ring-blue-400 rounded p-6 bg-white cursor-pointer">
+              <i class="fa-solid fa-tree"></i>
+              <p class="text-base mt-2">Use Stick</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Submit</button>
+      </div>
+    </form>
+
+    <div id="result" class="mt-6 text-2xl font-bold text-green-600 hidden text-center"></div>
+  </section>
+
+  <!-- Quiz Script -->
+  <script>
+    const quizForm = document.getElementById('quizForm');
+    const resultBox = document.getElementById('result');
+
+    quizForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const correctAnswers = {
+        q1: "b",
+        q2: "a",
+        q3: "d",
+        q4: "d"
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let q in correctAnswers) {
+        const selected = quizForm[q]?.value;
+        if (selected === correctAnswers[q]) score++;
+      }
+
+      resultBox.textContent = `✅ You scored ${score} out of ${total}!`;
+      resultBox.classList.remove('hidden');
+    });
+  </script>
+
+</body>
+</html>
